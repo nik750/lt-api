@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS inventory (
+    id VARCHAR(50) PRIMARY KEY,
+    storeId VARCHAR(50) NOT NULL,
+    product VARCHAR(100) NOT NULL,
+    quantity INTEGER NOT NULL,
+    price NUMERIC(12,2) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS store (
+    id VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    location VARCHAR(100) NOT NULL
+);
